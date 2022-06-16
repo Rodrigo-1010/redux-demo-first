@@ -5,7 +5,7 @@ export default function counterReducer(state = 0, action) {
     case "DECREMENT":
       return state - 1;
     case "SET_NUMBER":
-      return (state = action.payload);
+      return action.payload;
     default:
       return state;
   }
