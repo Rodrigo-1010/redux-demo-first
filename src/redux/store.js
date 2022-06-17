@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import shoppingListReducer from "./shoppingListReducer";
+import listGroupReducer from "../redux/listGroupSlice";
 
 const store = configureStore({
-  reducer: { shoppingList: shoppingListReducer },
+  reducer: {
+    listGroup: listGroupReducer,
+  },
 });
 
 export default store;

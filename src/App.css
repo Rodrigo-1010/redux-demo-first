@@ -37,6 +37,11 @@
   }
 }
 
-i:hover {
+li, i {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
